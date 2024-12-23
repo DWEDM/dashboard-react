@@ -1,21 +1,24 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client'; // Import ReactDOM from 'react-dom/client'
 import '../css/app.css';
+import Footer from './partials/footer'; // Correct import path
+import Navbar from './partials/navbar';
+
+// Create a root element for the app
+const root = ReactDOM.createRoot(document.getElementById('app')); 
 
 function App() {
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="bg-primary text-white p-4">
-        <h1 className="text-2xl">Dashboard</h1>
-      </header>
-      <main className="flex-grow p-6">
-        <h2 className="text-xl">Welcome to the React Dashboard</h2>
-      </main>
-      <footer className="bg-neutral text-neutral-content p-4 text-center">
-        <p>&copy; 2024 Dashboard Inc.</p>
-      </footer>
+      <Navbar />
+        <main className="flex-grow p-6 h-[200vh]">
+          <h2 className="text-xl">Welcome to the React Dashboard</h2>
+          {/* Add any content here */}
+        </main>
+      <Footer />
     </div>
   );
 }
 
-ReactDOM.render(<App />, document.getElementById('app'));
+// Use the root element to render the app
+root.render(<App />);
