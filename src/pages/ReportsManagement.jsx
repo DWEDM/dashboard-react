@@ -1,10 +1,11 @@
-function Dashboard() {
+function ReportsManagement() {
     return (
       <div>
-        <h1>Dashboard</h1>
+        <h1>ReportsManagement</h1>
         <p>Here are the statistics of your site.</p>
       </div>
     );
   }
   
-export default Dashboard;
+export default ReportsManagement;
+  

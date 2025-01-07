@@ -1,10 +1,10 @@
-function Dashboard() {
+function PrivacyPolicy() {
     return (
       <div>
-        <h1>Dashboard</h1>
+        <h1>PrivacyPolicy</h1>
         <p>Here are the statistics of your site.</p>
       </div>
     );
   }
   
-export default Dashboard;
+export default PrivacyPolicy;

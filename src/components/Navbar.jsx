@@ -1,6 +1,6 @@
 function Navbar() {
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-200">
             <div className="flex-1 gap-2">
                 <label htmlFor="SideBar" className="btn drawer-button lg:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="w-6 h-6" viewBox="0 0 16 16">
@@ -21,14 +21,12 @@ function Navbar() {
                 </div>
                 <ul
                     tabIndex="0"
-                    className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow gap-y-1">
                     <li>
-                    <a className="justify-between">
-                        Profile
-                        <span className="badge">New</span>
-                    </a>
+                        <a className="justify-between">
+                            Profile
+                        </a>
                     </li>
-                    <li><a>Profile</a></li>
                     <li><a>Logout</a></li>
                 </ul>
                 </div>
