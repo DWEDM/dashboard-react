@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 import Dashboard from './pages/Dashboard';
 import PostManagement from './pages/PostManagement';
@@ -13,11 +14,11 @@ function App() {
   const [activeMenu, setActiveMenu] = useState('dashboard');
   return (
     <>
+      <Navbar />
       <div className="drawer lg:drawer-open">
         <input id="SideBar" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col items-start align-top">
-          <Navbar />
-          <div className="content w-full h-auto overflow-x-hidden p-4">
+          <div className="content w-full h-auto overflow-x-hidden p-12 bg-base-200">
             {activeMenu === 'dashboard' && <Dashboard />}
             {activeMenu === 'postManagement' && <PostManagement />}
             {activeMenu === 'accountsManagement' && <AccountsManagement />}
@@ -30,7 +31,7 @@ function App() {
 
         <div className="drawer-side">
             <label htmlFor="SideBar" aria-label="close sidebar" className="drawer-overlay"></label>
-            <ul className="menu gap-y-2 bg-base-300 text-base-content min-h-full w-80 p-4">
+            <ul className="menu gap-y-2 bg-base-200 text-base-content min-h-full w-80 p-4">
               <li onClick={() => setActiveMenu('dashboard')}>
                 <a className="align-center justify-start items-left">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="w-4 h-4" viewBox="0 0 16 16">
@@ -93,6 +94,8 @@ function App() {
             </ul>
         </div>
       </div>
+      
+      <Footer />
     </>
   )
 }

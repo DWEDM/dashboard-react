@@ -2,7 +2,7 @@ function TermsOfService({ setActiveMenu }) {
     return (
       <>
         <div className="container mx-auto p-4">
-          <div className="card bg-base-200 shadow-md p-12">
+          <div className="card bg-base-100 shadow-md p-12">
             <h1 className="text-5xl font-bold mb-4">Terms of Service</h1>
           
             <section className="mb-6">

@@ -1,6 +1,6 @@
 function Navbar() {
     return (
-        <div className="navbar bg-base-200">
+        <div className="navbar bg-base-300">
             <div className="flex-1 gap-2">
                 <label htmlFor="SideBar" className="btn drawer-button lg:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="w-6 h-6" viewBox="0 0 16 16">
