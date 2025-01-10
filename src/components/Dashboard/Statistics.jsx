@@ -4,7 +4,7 @@ function Statistics() {
     return (
       <>
         <div className="body-font">
-            <div className="container px-5 py-12 mx-auto">
+            <div className="container px-5 py-12 mx-auto ">
               <div className="flex flex-col text-center w-full mb-20">
                 <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4">Site Metrics</h1>
                 <p className="lg:w-3/4 mx-auto leading-relaxed">

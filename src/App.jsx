@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 import Dashboard from './pages/Dashboard';
-import PostManagement from './pages/PostManagement';
+import ContentManagement from './pages/ContentManagement';
 import AccountsManagement from './pages/AccountsManagement';
 import ReportsManagement from './pages/ReportsManagement';
 import AdoptionsList from './pages/AdoptionsList';
@@ -15,12 +15,12 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="drawer lg:drawer-open">
+      <div className="drawer lg:drawer-open bg-base-200">
         <input id="SideBar" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col items-start align-top">
           <div className="content w-full h-auto overflow-x-hidden p-12 bg-base-200">
             {activeMenu === 'dashboard' && <Dashboard />}
-            {activeMenu === 'postManagement' && <PostManagement />}
+            {activeMenu === 'contentManagement' && <ContentManagement />}
             {activeMenu === 'accountsManagement' && <AccountsManagement />}
             {activeMenu === 'reportsManagement' && <ReportsManagement />}
             {activeMenu === 'adoptionsList' && <AdoptionsList />}
@@ -41,12 +41,12 @@ function App() {
                   Dashboard
                 </a>
               </li>
-              <li onClick={() => setActiveMenu('postManagement')}>
+              <li onClick={() => setActiveMenu('contentManagement')}>
                 <a className="align-center justify-start items-left">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" className="w-4 h-4" viewBox="0 0 16 16">
                     <path fillRule="evenodd" d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm7.5.5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0zM2 5.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5M10.5 5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM13 8h-2V6h2z"/>
                   </svg>
-                  Post Management
+                  Content Management
                 </a>
               </li>
               <li onClick={() => setActiveMenu('accountsManagement')}>
